@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA2ECD0729F4C79300AF41DB /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2ECD0629F4C79300AF41DB /* MapVC.swift */; };
+		BA56C67129EF87F7004ACA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C67029EF87F7004ACA60 /* AppDelegate.swift */; };
+		BA56C67329EF87F7004ACA60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C67229EF87F7004ACA60 /* SceneDelegate.swift */; };
+		BA56C67529EF87F7004ACA60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C67429EF87F7004ACA60 /* ViewController.swift */; };
+		BA56C67829EF87F7004ACA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA56C67629EF87F7004ACA60 /* Main.storyboard */; };
+		BA56C67A29EF87FA004ACA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA56C67929EF87FA004ACA60 /* Assets.xcassets */; };
+		BA56C67D29EF87FA004ACA60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA56C67B29EF87FA004ACA60 /* LaunchScreen.storyboard */; };
+		BA56C68529EF880E004ACA60 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C68429EF880E004ACA60 /* LoginVC.swift */; };
+		BA56C68829F00944004ACA60 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C68729F00944004ACA60 /* RegisterVC.swift */; };
+		BA56C68A29F0095C004ACA60 /* ForogtPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C68929F0095C004ACA60 /* ForogtPasswordVC.swift */; };
+		BA56C68C29F00972004ACA60 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C68B29F00972004ACA60 /* HomeVC.swift */; };
+		BA56C68E29F0098C004ACA60 /* PlacesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C68D29F0098C004ACA60 /* PlacesCVC.swift */; };
+		BA56C69229F009BB004ACA60 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69129F009BB004ACA60 /* SavedVC.swift */; };
+		BA56C69429F009CE004ACA60 /* ViewPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69329F009CE004ACA60 /* ViewPlaceVC.swift */; };
+		BA56C69629F009E6004ACA60 /* BookAGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69529F009E6004ACA60 /* BookAGuideVC.swift */; };
+		BA56C69829F009FB004ACA60 /* SplitMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69729F009FB004ACA60 /* SplitMoneyVC.swift */; };
+		BA56C69A29F00A0D004ACA60 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69929F00A0D004ACA60 /* SearchVC.swift */; };
+		BA56C69C29F00A1F004ACA60 /* DisplayCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69B29F00A1F004ACA60 /* DisplayCVC.swift */; };
+		BA56C69E29F00A31004ACA60 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69D29F00A31004ACA60 /* ProfileVC.swift */; };
+		BA56C6A029F00A4F004ACA60 /* UseAppCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C69F29F00A4F004ACA60 /* UseAppCVC.swift */; };
+		BA56C6A229F00A5E004ACA60 /* UtilityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6A129F00A5E004ACA60 /* UtilityConstants.swift */; };
+		BA56C6A529F00CA2004ACA60 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6A429F00CA2004ACA60 /* FirebaseAuth */; };
+		BA56C6A729F00CA2004ACA60 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6A629F00CA2004ACA60 /* FirebaseAuthCombine-Community */; };
+		BA56C6A929F00CA2004ACA60 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6A829F00CA2004ACA60 /* FirebaseDatabase */; };
+		BA56C6AB29F00CA2004ACA60 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6AA29F00CA2004ACA60 /* FirebaseDatabaseSwift */; };
+		BA56C6AD29F00CA2004ACA60 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6AC29F00CA2004ACA60 /* FirebaseFirestore */; };
+		BA56C6AF29F00CA2004ACA60 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6AE29F00CA2004ACA60 /* FirebaseFirestoreCombine-Community */; };
+		BA56C6B129F00CA2004ACA60 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6B029F00CA2004ACA60 /* FirebaseFirestoreSwift */; };
+		BA56C6B329F00CA2004ACA60 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6B229F00CA2004ACA60 /* FirebaseStorage */; };
+		BA56C6B529F00CA2004ACA60 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6B429F00CA2004ACA60 /* FirebaseStorageCombine-Community */; };
+		BA56C6B729F00D50004ACA60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA56C6B629F00D4F004ACA60 /* GoogleService-Info.plist */; };
+		BA56C6BB29F09B0A004ACA60 /* SavedPlaceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6BA29F09B09004ACA60 /* SavedPlaceTVC.swift */; };
+		BA56C6BD29F0C165004ACA60 /* GuideTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6BC29F0C165004ACA60 /* GuideTVC.swift */; };
+		BA7950DC29FFC87F00BB361C /* AdminActiviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7950DB29FFC87F00BB361C /* AdminActiviesVC.swift */; };
+		BA7950DE29FFCC0F00BB361C /* TrekPlaceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7950DD29FFCC0F00BB361C /* TrekPlaceTVC.swift */; };
+		BA7950E029FFDD1000BB361C /* UpdateTrekPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7950DF29FFDD1000BB361C /* UpdateTrekPlaceVC.swift */; };
+		BA7950E229FFE51100BB361C /* UpdateMoreDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7950E129FFE51100BB361C /* UpdateMoreDetailsVC.swift */; };
+		BAA0B67229FCBDCF0079841B /* ChooseUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0B67129FCBDCF0079841B /* ChooseUserVC.swift */; };
+		BAA0B67429FCC1710079841B /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0B67329FCC1710079841B /* AdminLoginVC.swift */; };
+		BAA0B67629FCC52E0079841B /* AddTrekPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0B67529FCC52E0079841B /* AddTrekPlaceVC.swift */; };
+		BAA0B67829FCC54A0079841B /* TrekPlacesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0B67729FCC54A0079841B /* TrekPlacesListVC.swift */; };
+		BAA0B67A29FD84180079841B /* AddMoreTrekPlaceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0B67929FD84180079841B /* AddMoreTrekPlaceDetailsVC.swift */; };
+		BACD6CD92A008B1C002D5FFB /* AddGuidesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD6CD82A008B1C002D5FFB /* AddGuidesVC.swift */; };
+		BACD6CDB2A008B41002D5FFB /* ViewGuidesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD6CDA2A008B41002D5FFB /* ViewGuidesVC.swift */; };
+		BACD6CDD2A008C95002D5FFB /* GuideDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD6CDC2A008C95002D5FFB /* GuideDetailsTVC.swift */; };
+		BACD6CDF2A008D9B002D5FFB /* UpdateGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD6CDE2A008D9B002D5FFB /* UpdateGuideVC.swift */; };
+		BACD6CE52A010FA7002D5FFB /* PlaceTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACD6CE42A010FA7002D5FFB /* PlaceTVC.swift */; };
+		BAD4111A29F3A3CE00457F0D /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4111929F3A3CE00457F0D /* SearchResultsVC.swift */; };
+		BAE2047E29F4F70900727DAB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BAE2047D29F4F70900727DAB /* Lottie */; };
+		BAE2048929F537BE00727DAB /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE2048829F537BE00727DAB /* SettingsVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA2ECD0629F4C79300AF41DB /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		BA56C66D29EF87F7004ACA60 /* ProjectTrekkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTrekkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA56C67029EF87F7004ACA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA56C67229EF87F7004ACA60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BA56C67429EF87F7004ACA60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA56C67729EF87F7004ACA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA56C67929EF87FA004ACA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA56C67C29EF87FA004ACA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA56C67E29EF87FA004ACA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA56C68429EF880E004ACA60 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BA56C68729F00944004ACA60 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		BA56C68929F0095C004ACA60 /* ForogtPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForogtPasswordVC.swift; sourceTree = "<group>"; };
+		BA56C68B29F00972004ACA60 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BA56C68D29F0098C004ACA60 /* PlacesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCVC.swift; sourceTree = "<group>"; };
+		BA56C69129F009BB004ACA60 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
+		BA56C69329F009CE004ACA60 /* ViewPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPlaceVC.swift; sourceTree = "<group>"; };
+		BA56C69529F009E6004ACA60 /* BookAGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAGuideVC.swift; sourceTree = "<group>"; };
+		BA56C69729F009FB004ACA60 /* SplitMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMoneyVC.swift; sourceTree = "<group>"; };
+		BA56C69929F00A0D004ACA60 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		BA56C69B29F00A1F004ACA60 /* DisplayCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCVC.swift; sourceTree = "<group>"; };
+		BA56C69D29F00A31004ACA60 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		BA56C69F29F00A4F004ACA60 /* UseAppCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseAppCVC.swift; sourceTree = "<group>"; };
+		BA56C6A129F00A5E004ACA60 /* UtilityConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityConstants.swift; sourceTree = "<group>"; };
+		BA56C6B629F00D4F004ACA60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA56C6BA29F09B09004ACA60 /* SavedPlaceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlaceTVC.swift; sourceTree = "<group>"; };
+		BA56C6BC29F0C165004ACA60 /* GuideTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTVC.swift; sourceTree = "<group>"; };
+		BA7950DB29FFC87F00BB361C /* AdminActiviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminActiviesVC.swift; sourceTree = "<group>"; };
+		BA7950DD29FFCC0F00BB361C /* TrekPlaceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekPlaceTVC.swift; sourceTree = "<group>"; };
+		BA7950DF29FFDD1000BB361C /* UpdateTrekPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTrekPlaceVC.swift; sourceTree = "<group>"; };
+		BA7950E129FFE51100BB361C /* UpdateMoreDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMoreDetailsVC.swift; sourceTree = "<group>"; };
+		BAA0B67129FCBDCF0079841B /* ChooseUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUserVC.swift; sourceTree = "<group>"; };
+		BAA0B67329FCC1710079841B /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
+		BAA0B67529FCC52E0079841B /* AddTrekPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrekPlaceVC.swift; sourceTree = "<group>"; };
+		BAA0B67729FCC54A0079841B /* TrekPlacesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrekPlacesListVC.swift; sourceTree = "<group>"; };
+		BAA0B67929FD84180079841B /* AddMoreTrekPlaceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoreTrekPlaceDetailsVC.swift; sourceTree = "<group>"; };
+		BACD6CD82A008B1C002D5FFB /* AddGuidesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuidesVC.swift; sourceTree = "<group>"; };
+		BACD6CDA2A008B41002D5FFB /* ViewGuidesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGuidesVC.swift; sourceTree = "<group>"; };
+		BACD6CDC2A008C95002D5FFB /* GuideDetailsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideDetailsTVC.swift; sourceTree = "<group>"; };
+		BACD6CDE2A008D9B002D5FFB /* UpdateGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateGuideVC.swift; sourceTree = "<group>"; };
+		BACD6CE42A010FA7002D5FFB /* PlaceTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTVC.swift; sourceTree = "<group>"; };
+		BAD4111929F3A3CE00457F0D /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
+		BAE2048829F537BE00727DAB /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA56C66A29EF87F7004ACA60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA56C6AB29F00CA2004ACA60 /* FirebaseDatabaseSwift in Frameworks */,
+				BA56C6A929F00CA2004ACA60 /* FirebaseDatabase in Frameworks */,
+				BA56C6A529F00CA2004ACA60 /* FirebaseAuth in Frameworks */,
+				BA56C6B129F00CA2004ACA60 /* FirebaseFirestoreSwift in Frameworks */,
+				BA56C6AF29F00CA2004ACA60 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				BAE2047E29F4F70900727DAB /* Lottie in Frameworks */,
+				BA56C6B329F00CA2004ACA60 /* FirebaseStorage in Frameworks */,
+				BA56C6AD29F00CA2004ACA60 /* FirebaseFirestore in Frameworks */,
+				BA56C6B529F00CA2004ACA60 /* FirebaseStorageCombine-Community in Frameworks */,
+				BA56C6A729F00CA2004ACA60 /* FirebaseAuthCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA56C66429EF87F7004ACA60 = {
+			isa = PBXGroup;
+			children = (
+				BA56C66F29EF87F7004ACA60 /* ProjectTrekkingApp */,
+				BA56C66E29EF87F7004ACA60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA56C66E29EF87F7004ACA60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C66D29EF87F7004ACA60 /* ProjectTrekkingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA56C66F29EF87F7004ACA60 /* ProjectTrekkingApp */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C6B929F00DC9004ACA60 /* Authentication */,
+				BA56C6B829F00DB0004ACA60 /* Supporting Files */,
+				BAE2048329F5326000727DAB /* Saved Places */,
+				BAE2048429F5326E00727DAB /* Maps */,
+				BAE2048129F5322800727DAB /* Place Details */,
+				BAE2047F29F531F900727DAB /* Guides */,
+				BAE2048529F5327C00727DAB /* Split Money */,
+				BAE2048029F5320A00727DAB /* Search */,
+				BAE2048229F5324800727DAB /* Home */,
+				BAE2048629F5328B00727DAB /* Profile */,
+				BAE2048729F5329700727DAB /* Data File */,
+				BA56C67429EF87F7004ACA60 /* ViewController.swift */,
+				BA56C67629EF87F7004ACA60 /* Main.storyboard */,
+				BACD6CDE2A008D9B002D5FFB /* UpdateGuideVC.swift */,
+				BACD6CDC2A008C95002D5FFB /* GuideDetailsTVC.swift */,
+				BACD6CDA2A008B41002D5FFB /* ViewGuidesVC.swift */,
+				BACD6CD82A008B1C002D5FFB /* AddGuidesVC.swift */,
+				BA7950E129FFE51100BB361C /* UpdateMoreDetailsVC.swift */,
+				BA7950DD29FFCC0F00BB361C /* TrekPlaceTVC.swift */,
+				BAA0B67929FD84180079841B /* AddMoreTrekPlaceDetailsVC.swift */,
+				BA7950DB29FFC87F00BB361C /* AdminActiviesVC.swift */,
+				BAA0B67729FCC54A0079841B /* TrekPlacesListVC.swift */,
+				BA7950DF29FFDD1000BB361C /* UpdateTrekPlaceVC.swift */,
+				BAA0B67529FCC52E0079841B /* AddTrekPlaceVC.swift */,
+				BAA0B67329FCC1710079841B /* AdminLoginVC.swift */,
+				BAA0B67129FCBDCF0079841B /* ChooseUserVC.swift */,
+				BA56C67929EF87FA004ACA60 /* Assets.xcassets */,
+				BA56C67B29EF87FA004ACA60 /* LaunchScreen.storyboard */,
+				BA56C6B629F00D4F004ACA60 /* GoogleService-Info.plist */,
+				BA56C67E29EF87FA004ACA60 /* Info.plist */,
+			);
+			path = ProjectTrekkingApp;
+			sourceTree = "<group>";
+		};
+		BA56C6B829F00DB0004ACA60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C67029EF87F7004ACA60 /* AppDelegate.swift */,
+				BA56C67229EF87F7004ACA60 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA56C6B929F00DC9004ACA60 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C68929F0095C004ACA60 /* ForogtPasswordVC.swift */,
+				BA56C68729F00944004ACA60 /* RegisterVC.swift */,
+				BA56C68429EF880E004ACA60 /* LoginVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BAE2047F29F531F900727DAB /* Guides */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C69529F009E6004ACA60 /* BookAGuideVC.swift */,
+				BA56C6BC29F0C165004ACA60 /* GuideTVC.swift */,
+			);
+			path = Guides;
+			sourceTree = "<group>";
+		};
+		BAE2048029F5320A00727DAB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C69929F00A0D004ACA60 /* SearchVC.swift */,
+				BAD4111929F3A3CE00457F0D /* SearchResultsVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BAE2048129F5322800727DAB /* Place Details */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C69329F009CE004ACA60 /* ViewPlaceVC.swift */,
+				BA56C68D29F0098C004ACA60 /* PlacesCVC.swift */,
+			);
+			path = "Place Details";
+			sourceTree = "<group>";
+		};
+		BAE2048229F5324800727DAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C69B29F00A1F004ACA60 /* DisplayCVC.swift */,
+				BA56C69F29F00A4F004ACA60 /* UseAppCVC.swift */,
+				BA56C68B29F00972004ACA60 /* HomeVC.swift */,
+				BACD6CE42A010FA7002D5FFB /* PlaceTVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BAE2048329F5326000727DAB /* Saved Places */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C69129F009BB004ACA60 /* SavedVC.swift */,
+				BA56C6BA29F09B09004ACA60 /* SavedPlaceTVC.swift */,
+			);
+			path = "Saved Places";
+			sourceTree = "<group>";
+		};
+		BAE2048429F5326E00727DAB /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				BA2ECD0629F4C79300AF41DB /* MapVC.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		BAE2048529F5327C00727DAB /* Split Money */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C69729F009FB004ACA60 /* SplitMoneyVC.swift */,
+			);
+			path = "Split Money";
+			sourceTree = "<group>";
+		};
+		BAE2048629F5328B00727DAB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BAE2048829F537BE00727DAB /* SettingsVC.swift */,
+				BA56C69D29F00A31004ACA60 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BAE2048729F5329700727DAB /* Data File */ = {
+			isa = PBXGroup;
+			children = (
+				BA56C6A129F00A5E004ACA60 /* UtilityConstants.swift */,
+			);
+			path = "Data File";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA56C66C29EF87F7004ACA60 /* ProjectTrekkingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA56C68129EF87FA004ACA60 /* Build configuration list for PBXNativeTarget "ProjectTrekkingApp" */;
+			buildPhases = (
+				BA56C66929EF87F7004ACA60 /* Sources */,
+				BA56C66A29EF87F7004ACA60 /* Frameworks */,
+				BA56C66B29EF87F7004ACA60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectTrekkingApp;
+			packageProductDependencies = (
+				BA56C6A429F00CA2004ACA60 /* FirebaseAuth */,
+				BA56C6A629F00CA2004ACA60 /* FirebaseAuthCombine-Community */,
+				BA56C6A829F00CA2004ACA60 /* FirebaseDatabase */,
+				BA56C6AA29F00CA2004ACA60 /* FirebaseDatabaseSwift */,
+				BA56C6AC29F00CA2004ACA60 /* FirebaseFirestore */,
+				BA56C6AE29F00CA2004ACA60 /* FirebaseFirestoreCombine-Community */,
+				BA56C6B029F00CA2004ACA60 /* FirebaseFirestoreSwift */,
+				BA56C6B229F00CA2004ACA60 /* FirebaseStorage */,
+				BA56C6B429F00CA2004ACA60 /* FirebaseStorageCombine-Community */,
+				BAE2047D29F4F70900727DAB /* Lottie */,
+			);
+			productName = ProjectTrekkingApp;
+			productReference = BA56C66D29EF87F7004ACA60 /* ProjectTrekkingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA56C66529EF87F7004ACA60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BA56C66C29EF87F7004ACA60 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BA56C66829EF87F7004ACA60 /* Build configuration list for PBXProject "ProjectTrekkingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA56C66429EF87F7004ACA60;
+			packageReferences = (
+				BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BAE2047C29F4F70900727DAB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = BA56C66E29EF87F7004ACA60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA56C66C29EF87F7004ACA60 /* ProjectTrekkingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA56C66B29EF87F7004ACA60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA56C67D29EF87FA004ACA60 /* LaunchScreen.storyboard in Resources */,
+				BA56C67A29EF87FA004ACA60 /* Assets.xcassets in Resources */,
+				BA56C6B729F00D50004ACA60 /* GoogleService-Info.plist in Resources */,
+				BA56C67829EF87F7004ACA60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA56C66929EF87F7004ACA60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA0B67629FCC52E0079841B /* AddTrekPlaceVC.swift in Sources */,
+				BAA0B67A29FD84180079841B /* AddMoreTrekPlaceDetailsVC.swift in Sources */,
+				BACD6CDB2A008B41002D5FFB /* ViewGuidesVC.swift in Sources */,
+				BACD6CE52A010FA7002D5FFB /* PlaceTVC.swift in Sources */,
+				BAA0B67829FCC54A0079841B /* TrekPlacesListVC.swift in Sources */,
+				BA56C6BD29F0C165004ACA60 /* GuideTVC.swift in Sources */,
+				BACD6CDF2A008D9B002D5FFB /* UpdateGuideVC.swift in Sources */,
+				BA56C69629F009E6004ACA60 /* BookAGuideVC.swift in Sources */,
+				BA7950E029FFDD1000BB361C /* UpdateTrekPlaceVC.swift in Sources */,
+				BA56C69229F009BB004ACA60 /* SavedVC.swift in Sources */,
+				BA56C67529EF87F7004ACA60 /* ViewController.swift in Sources */,
+				BA2ECD0729F4C79300AF41DB /* MapVC.swift in Sources */,
+				BA56C6A229F00A5E004ACA60 /* UtilityConstants.swift in Sources */,
+				BA56C6BB29F09B0A004ACA60 /* SavedPlaceTVC.swift in Sources */,
+				BA56C69E29F00A31004ACA60 /* ProfileVC.swift in Sources */,
+				BAA0B67429FCC1710079841B /* AdminLoginVC.swift in Sources */,
+				BA56C68C29F00972004ACA60 /* HomeVC.swift in Sources */,
+				BACD6CDD2A008C95002D5FFB /* GuideDetailsTVC.swift in Sources */,
+				BA56C67129EF87F7004ACA60 /* AppDelegate.swift in Sources */,
+				BACD6CD92A008B1C002D5FFB /* AddGuidesVC.swift in Sources */,
+				BA7950DC29FFC87F00BB361C /* AdminActiviesVC.swift in Sources */,
+				BA56C6A029F00A4F004ACA60 /* UseAppCVC.swift in Sources */,
+				BAE2048929F537BE00727DAB /* SettingsVC.swift in Sources */,
+				BA56C69A29F00A0D004ACA60 /* SearchVC.swift in Sources */,
+				BA7950E229FFE51100BB361C /* UpdateMoreDetailsVC.swift in Sources */,
+				BA56C68A29F0095C004ACA60 /* ForogtPasswordVC.swift in Sources */,
+				BA7950DE29FFCC0F00BB361C /* TrekPlaceTVC.swift in Sources */,
+				BA56C69829F009FB004ACA60 /* SplitMoneyVC.swift in Sources */,
+				BA56C69429F009CE004ACA60 /* ViewPlaceVC.swift in Sources */,
+				BA56C68529EF880E004ACA60 /* LoginVC.swift in Sources */,
+				BA56C69C29F00A1F004ACA60 /* DisplayCVC.swift in Sources */,
+				BA56C67329EF87F7004ACA60 /* SceneDelegate.swift in Sources */,
+				BAD4111A29F3A3CE00457F0D /* SearchResultsVC.swift in Sources */,
+				BA56C68E29F0098C004ACA60 /* PlacesCVC.swift in Sources */,
+				BA56C68829F00944004ACA60 /* RegisterVC.swift in Sources */,
+				BAA0B67229FCBDCF0079841B /* ChooseUserVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA56C67629EF87F7004ACA60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA56C67729EF87F7004ACA60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA56C67B29EF87FA004ACA60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA56C67C29EF87FA004ACA60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA56C67F29EF87FA004ACA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA56C68029EF87FA004ACA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA56C68229EF87FA004ACA60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjectTrekkingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.ProjectTrekkingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA56C68329EF87FA004ACA60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProjectTrekkingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.ProjectTrekkingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA56C66829EF87F7004ACA60 /* Build configuration list for PBXProject "ProjectTrekkingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA56C67F29EF87FA004ACA60 /* Debug */,
+				BA56C68029EF87FA004ACA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA56C68129EF87FA004ACA60 /* Build configuration list for PBXNativeTarget "ProjectTrekkingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA56C68229EF87FA004ACA60 /* Debug */,
+				BA56C68329EF87FA004ACA60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		BAE2047C29F4F70900727DAB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA56C6A429F00CA2004ACA60 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BA56C6A629F00CA2004ACA60 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		BA56C6A829F00CA2004ACA60 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BA56C6AA29F00CA2004ACA60 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		BA56C6AC29F00CA2004ACA60 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BA56C6AE29F00CA2004ACA60 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		BA56C6B029F00CA2004ACA60 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		BA56C6B229F00CA2004ACA60 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		BA56C6B429F00CA2004ACA60 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6A329F00CA2004ACA60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		BAE2047D29F4F70900727DAB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAE2047C29F4F70900727DAB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA56C66529EF87F7004ACA60 /* Project object */;
+}
